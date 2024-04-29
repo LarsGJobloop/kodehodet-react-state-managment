@@ -3,6 +3,7 @@ import style from './app.module.css'
 import { CounterBasic } from './components/counterBasic/counterBasic'
 import { CounterHook } from './components/counterHook/counterHook'
 import { NoteWidget } from './components/noteWidgetIntro/noteWidgetIntro'
+import { NoteWidgetHook } from './components/noteWidgetHook/noteWidgetHook'
 
 function App() {
   return (
@@ -88,6 +89,34 @@ function App() {
 
           <section>
             <NoteWidget />
+          </section>
+
+          <footer>
+            <h3>Links:</h3>
+            <ul>
+              <li>
+                <a href="https://react.dev/learn/managing-state">React Learn: Managing State</a>
+              </li>
+              <li>
+                <a href="https://react.dev/reference/react/useState">React.useState</a>
+              </li>
+            </ul>
+          </footer>
+        </section>
+
+        <section className={[style["section"], style["widget-example-hook"]].join(" ")}>
+          <header>
+            <h2>Widget Example Hook</h2>
+            <p>Here we have extracted most of the logic from the note widget into a seperate hook. While this abstraction might be beneficial in some aspects there are tradeoffs that has to be made here.</p>
+
+            <ul>
+              <li>Handling structured data in state</li>
+            </ul>
+          </header>
+
+          <section>
+            <NoteWidgetHook />
+            <NoteWidgetHook />
           </section>
 
           <footer>
