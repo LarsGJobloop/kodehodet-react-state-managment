@@ -1,0 +1,31 @@
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 0.5em 1em;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.main {
+
+}
+
+.footer {
+  padding: 1em 1em;
+  text-align: center;
+  background-color: cornflowerblue;
+  color: white;
+  overflow: hidden;
+}
+
+.company-link {
+  color: rgb(255, 196, 175);
+  transition: all 100ms;
+}
+.company-link:hover {
+  scale: 1.10;
+}
