@@ -1,4 +1,5 @@
 .container {
+  padding: 3em 0px;
   display: grid;
   grid-template-columns: minmax(1em, 1fr) auto minmax(2em, 1fr);
   row-gap: 1em;
@@ -12,11 +13,6 @@
 
 }
 
-.section ul {
-  padding-left: 1em;
-  list-style-type: disc;
-}
-
 .stateful-components > header {
   padding: 1em 0px;
 }
@@ -25,4 +21,15 @@
   color: rgb(76, 4, 143);
   font-weight: 600;
   text-decoration: underline;
+}
+
+.custom-hooks {}
+
+.widget-example {}
+
+.widget-example > section {
+  padding: 1em 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -2,6 +2,7 @@ import { Layout } from './components/layout/layout'
 import style from './app.module.css'
 import { CounterBasic } from './components/counterBasic/counterBasic'
 import { CounterHook } from './components/counterHook/counterHook'
+import { NoteWidget } from './components/noteWidgetIntro/noteWidgetIntro'
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
           </footer>
         </section>
 
-        <section className={[style["section"], style["stateful-components"]].join(" ")}>
+        <section className={[style["section"], style["custom-hooks"]].join(" ")}>
           <header>
             <h2>Setting up a custom hook</h2>
             <p>Here we have the same logic, but this time it's encapsulated inside a seperate hook</p>
@@ -57,6 +58,36 @@ function App() {
                 <CounterHook initialCount={10} />
               </li>
             </ul>
+          </section>
+
+          <footer>
+            <h3>Links:</h3>
+            <ul>
+              <li>
+                <a href="https://react.dev/learn/managing-state">React Learn: Managing State</a>
+              </li>
+              <li>
+                <a href="https://react.dev/reference/react/useState">React.useState</a>
+              </li>
+            </ul>
+          </footer>
+        </section>
+
+        <section className={[style["section"], style["widget-example"]].join(" ")}>
+          <header>
+            <h2>Widget Example</h2>
+            <p>Here is a more complex example showcasing how to handle more complex state composed of <em>Arrays</em></p>
+
+            <ul>
+              <li>Reference types in state</li>
+              <li>Immutable state</li>
+              <li>Multiple states</li>
+              <li>Controlled Components</li>
+            </ul>
+          </header>
+
+          <section>
+            <NoteWidget />
           </section>
 
           <footer>
